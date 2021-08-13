@@ -1,5 +1,5 @@
 
-console.log("My javascript file is loaded sucessfully!!")
+
 
 
 
