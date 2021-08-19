@@ -10,6 +10,7 @@ const app = express()
 const publicdirectoryPath = path.join(__dirname,"../public")
 const viewsPath = path.join(__dirname,'../templates/views')
 const partialpath = path.join(__dirname,'../templates/partials')
+const port = process.env.PORT || 3000
 
 
 //Setup handlebars engine and views location 
@@ -104,8 +105,8 @@ app.get('*',(req,res) => {
 })
 
 
-app.listen(3000,()=>{
-    console.log("Server is up on port 3000")
+app.listen(port,()=>{
+    console.log("Server is up on port "+port)
 })
 
 
