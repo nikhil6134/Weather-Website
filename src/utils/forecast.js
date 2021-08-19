@@ -12,7 +12,8 @@ const forecast = (longitude,latitude,callback) => {
         }
 
         else{
-            callback(undefined,"It is currently "+ body['current']['temp_c'] + " degrees out. There is a "+ body['current']['precip_mm']+"% chance of rain.")
+            
+            callback(undefined,"It is currently "+ body['current']['temp_c'] + " degrees out. The humidity is "+body['current']['humidity'] +".There is a "+ body['current']['precip_mm']+"% chance of rain.")
         }
     })
    
